@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker - Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Preview</h1>
+
+        <div id="photoContainer">
+            <img id="resumePhoto" class="resume-photo" style="display: none;">
+        </div>
+
+        <div id="mainDetails" class="resume-section">
+            <h2 id="previewName"></h2>
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="previewPhone"></span></p>
+            <h3>Professional Summary</h3>
+            <p id="previewSummary"></p>
+        </div>
+
+        <div id="additionalInfo" class="resume-section">
+            <h3>Education</h3>
+            <p id="previewEducation"></p>
+            <h3>Experience</h3>
+            <p id="previewExperience"></p>
+            <h3>Skills</h3>
+            <p id="previewSkills"></p>
+            <h3>Projects</h3>
+            <p id="previewProjects"></p>
+            <h3>Achievements</h3>
+            <p id="previewAchievements"></p>
+        </div>
+
+        <button id="downloadButton" onclick="downloadResume()">Download as PDF</button>
+    </div>
+
+    <script src="resume.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker - Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Details</h1>
+
+        <form id="resumeForm">
+            <h3>Main Details</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="summary">Professional Summary:</label>
+            <textarea id="summary" placeholder="Brief summary about yourself" required></textarea>
+
+            <label for="photo">Profile Photo (optional):</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <h3>Additional Information</h3>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Describe your education" required></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Describe your experience" required></textarea>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="List your skills" required></textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" placeholder="List your projects" required></textarea>
+
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements" placeholder="List your achievements" required></textarea>
+
+            <button type="button" onclick="saveDataAndRedirect()">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
